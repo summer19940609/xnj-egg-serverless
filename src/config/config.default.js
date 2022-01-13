@@ -18,6 +18,18 @@ module.exports = (appInfo) => {
   // add your middleware config here
   config.middleware = []
 
+  config.mysql = {
+    client: {
+      host: '101.35.83.133',
+      port: '3356',
+      user: 'xnj',
+      password: 'xnj123',
+      database: 'xnj',
+    },
+    app: true,
+    agent: false,
+  };
+
   // add your user config here
   const userConfig = {
     view: {

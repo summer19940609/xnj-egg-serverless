@@ -4,16 +4,12 @@ const { Controller } = require('egg')
 const { sleep } = require('../utils/index')
 
 class UserController extends Controller {
-  async list() {
+  async find() {
     const { ctx } = this
-    await sleep(Math.random())
-    ctx.body = [
-      {
-        id: 1,
-        name: 'yugasun',
-        email: 'yuga_sun@163.com'
-      }
-    ]
+    const ctx = this.ctx;
+    const userName = ctx.params.userName;
+    const user = await ctx.service.user.find(userName);
+    ctx.body = user;
   }
 }
 

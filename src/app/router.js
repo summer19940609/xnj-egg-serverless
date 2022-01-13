@@ -11,6 +11,5 @@ module.exports = (app) => {
   } = app
   router.get('/', controller.home.index)
   router.get('/event', controller.home.event)
-
-  router.get('/user', controller.user.list)
+  router.get('/user', controller.user.find)
 }
