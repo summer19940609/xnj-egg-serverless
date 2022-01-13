@@ -1,0 +1,13 @@
+org: '1308124158'
+app: xnj-egg-serverless
+stage: dev
+component: layer
+name: xnj-egg-serverless-layer
+inputs:
+  name: xnj-egg-serverless-layer
+  region: ap-shanghai
+  src:
+    src: ../node_modules
+    targetDir: /node_modules
+  runtimes:
+    - Nodejs12.16
