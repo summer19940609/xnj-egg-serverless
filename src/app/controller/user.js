@@ -7,7 +7,7 @@ class UserController extends Controller {
   async find() {
     const { ctx } = this
     const ctx = this.ctx;
-    const userName = ctx.params.userName;
+    const userName = ctx.query.userName;
     const user = await ctx.service.user.find(userName);
     ctx.body = user;
   }
