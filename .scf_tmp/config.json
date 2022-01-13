@@ -2,6 +2,6 @@
   "selectedTestModel": "scf_system_helloworld",
   "autoInstallDependency": false,
   "autoDeploy": false,
-  "codeSha256": "19dd723ccb71a2c69444592b8b02e4ec6a59e7e930d60d50a342f770260e4050",
-  "codeChanged": true
+  "codeSha256": "fd472a79814f0f62c7c4ac2ef23d5b369c644d196fd9472090ee404112250bf6",
+  "codeChanged": false
 }
